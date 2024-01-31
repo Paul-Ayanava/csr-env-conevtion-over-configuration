@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { getApiUrl } from './config';
 
 function App() {
+  const { apigeeurl, aemurl } = getApiUrl()
+  console.log(apigeeurl, aemurl)
   return (
     <div className="App">
       <header className="App-header">
